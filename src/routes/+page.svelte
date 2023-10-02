@@ -36,7 +36,7 @@
 			<a href="/" class="text-base leading-6 hover:underline">Investment</a>
 		</div>
 		<div class="hidden lg:flex lg:flex-1 lg:justify-end">
-			<a href="/" class="text-base leading-6 hover:font-semibold border border-[#0086e2] rounded-full px-8 py-2">Apply for funding <span aria-hidden="true">&rarr;</span></a
+			<a href="/" class="text-base leading-6 border border-[#0086e2] hover:bg-[#011523] rounded-full px-12 py-3">Apply for funding <span aria-hidden="true">&rarr;</span></a
 			>
 		</div>
 	</nav>
@@ -108,7 +108,7 @@
 			<div class="space-y-6">
 				<h1 class="text-white text-6xl font-medium font-cg">A First of it’s Kind Celebrity led Global VC Fund</h1>
 				<p class="text-xl">Da One Global Ventures is a VC fund founded by international cricketing icon Shikhar Dhawan, committed  to investing in innovation across the wide spectrum of Sports.</p>
-				<button class="text-base leading-6 hover:font-semibold border border-[#0086e2] rounded-full px-8 py-2">Apply for funding <span aria-hidden="true">&rarr;</span></button>
+				<button class="text-base leading-6 border border-[#0086e2] hover:bg-[#011523] rounded-full px-12 py-3">Apply for funding <span aria-hidden="true">&rarr;</span></button>
 			</div>
 			<div>
 				<img src="./shikhar-dhawan-daone.jpeg" alt="">
@@ -126,7 +126,7 @@
 				<h2 class="text-white text-5xl font-medium font-cg">Global Co-Investment Opportunities</h2>
 				<p class="text-xl">We have access to a large pool of quality deals, thanks to our extensive network and ability to collaborate.</p>
 			</div>
-			<div class="grid grid-cols-3 gap-8">
+			<div class="grid grid-cols-3 gap-8 px-32">
 				<div class="space-y-3 border border-blue-50 border-opacity-30 rounded-md p-8">
 					<h3 class="text-white text-lg font-medium font-cg">Co-Investments & Partnerships</h3>
 					<p class="text-base">Capitalizing on our vast global network, we foresee numerous co-investment prospects and exclusive sports industry partnerships.</p>
@@ -170,7 +170,54 @@
 <!-- Investment section ends here -->
 
 <!-- Team section starts here -->
-<section></section>
+<section class="py-24">
+	<div class="container mx-auto">
+		<div class="space-y-16">
+			<div class="flex flex-col items-center gap-4">
+				<h2 class="text-white text-5xl font-medium font-cg">Our Core Team</h2>
+				<p class="text-xl">We have access to a large pool of quality deals, thanks to our extensive network and ability to collaborate.</p>
+			</div>
+			<div class="grid grid-cols-4 gap-8 px-32">
+				<div class="space-y-3 border border-blue-50 border-opacity-30 rounded-md p-8">
+					<h3 class="text-white text-lg font-medium font-cg">Andrew Bell</h3>
+				</div>
+				<div class="space-y-3 border border-blue-50 border-opacity-30 rounded-md p-8">
+					<h3 class="text-white text-lg font-medium font-cg">Dr. Sandeep Gandhi</h3>
+				</div>
+				<div class="space-y-3 border border-blue-50 border-opacity-30 rounded-md p-8">
+					<h3 class="text-white text-lg font-medium font-cg">Amitesh Shah</h3>
+				</div>
+				<div class="space-y-3 border border-blue-50 border-opacity-30 rounded-md p-8">
+					<h3 class="text-white text-lg font-medium font-cg">Abhinav Tandon</h3>
+				</div>
+				<div class="space-y-3 border border-blue-50 border-opacity-30 rounded-md p-8">
+					<h3 class="text-white text-lg font-medium font-cg">Akshay Chhugani</h3>
+				</div>
+				<div class="space-y-3 border border-blue-50 border-opacity-30 rounded-md p-8">
+					<h3 class="text-white text-lg font-medium font-cg">Maharshi Ganatra</h3>
+				</div>
+				<div class="space-y-3 border border-blue-50 border-opacity-30 rounded-md p-8">
+					<h3 class="text-white text-lg font-medium font-cg">Kumar Gaurav</h3>
+				</div>
+				<div class="space-y-3 border border-blue-50 border-opacity-30 rounded-md p-8">
+					<h3 class="text-white text-lg font-medium font-cg">Akshay Grover</h3>
+				</div>
+				<div class="space-y-3 border border-blue-50 border-opacity-30 rounded-md p-8">
+					<h3 class="text-white text-lg font-medium font-cg">Geetansh Sahni</h3>
+				</div>
+				<div class="space-y-3 border border-blue-50 border-opacity-30 rounded-md p-8">
+					<h3 class="text-white text-lg font-medium font-cg">Rajeev Duggal</h3>
+				</div>
+				<div class="space-y-3 border border-blue-50 border-opacity-30 rounded-md p-8">
+					<h3 class="text-white text-lg font-medium font-cg">Abhinav Tandon</h3>
+				</div>
+				<div class="space-y-3 border border-blue-50 border-opacity-30 rounded-md p-8">
+					<h3 class="text-white text-lg font-medium font-cg">Raunak Hajela</h3>
+				</div>
+			</div>
+		</div>
+	</div>
+</section>
 <!-- Team section ends here -->
 
 <!-- FAQ section starts here -->
