@@ -31,10 +31,10 @@
 			</button>
 		</div>
 		<div class="hidden lg:flex lg:gap-x-12">
-			<a href="/" class="text-base leading-6 hover:underline">Home</a>
-			<a href="/" class="text-base leading-6 hover:underline">About</a>
-			<a href="/" class="text-base leading-6 hover:underline">Team</a>
-			<a href="/" class="text-base leading-6 hover:underline">Investment</a>
+			<a href="/" class="text-lg leading-6 hover:text-white">Home</a>
+			<a href="/" class="text-lg leading-6 hover:text-white">About</a>
+			<a href="/" class="text-lg leading-6 hover:text-white">Team</a>
+			<a href="/" class="text-lg leading-6 hover:text-white">Investment</a>
 		</div>
 		<div class="hidden lg:flex lg:flex-1 lg:justify-end">
 			<a

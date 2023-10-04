@@ -2,46 +2,46 @@
 
 @import '../fonts/clash-grotesk.css';
 
-:root {
-	--height: 255px;
-	--gradient-y-offset: -200px;
-	--gradient-x-offset: -200px;
-}
-
-// .gradients_gradientSectionBorderDivider__vXXGA {
-//     background: linear-gradient(90deg, #288cf9, #e32c6b);
+// :root {
+// 	--height: 255px;
+// 	--gradient-y-offset: -200px;
+// 	--gradient-x-offset: -200px;
 // }
 
-.gradients_gradientSectionBorderLeft__6XXiI,
-.gradients_gradientSectionBorderRight__eSMmF {
-	display: flex;
-	position: absolute;
-	width: 60vw !important;
-	height: var(--height) !important;
-	top: var(--gradient-y-offset);
-	border-radius: 100%;
-	mix-blend-mode: normal;
-	filter: blur(50px);
-}
+// // .gradients_gradientSectionBorderDivider__vXXGA {
+// //     background: linear-gradient(90deg, #288cf9, #e32c6b);
+// // }
 
-.gradients_gradientSectionBorderLeft__6XXiI {
-	left: var(--gradient-x-offset);
-	background: linear-gradient(180deg, #58a5ff, #a67af4);
-}
+// .gradients_gradientSectionBorderLeft__6XXiI,
+// .gradients_gradientSectionBorderRight__eSMmF {
+// 	display: flex;
+// 	position: absolute;
+// 	width: 60vw !important;
+// 	height: var(--height) !important;
+// 	top: var(--gradient-y-offset);
+// 	border-radius: 100%;
+// 	mix-blend-mode: normal;
+// 	filter: blur(50px);
+// }
 
-.gradients_gradientSectionBorderRight__eSMmF {
-	right: var(--gradient-x-offset);
-	background: linear-gradient(180deg, #ff3358, #ff4fd8);
-}
+// .gradients_gradientSectionBorderLeft__6XXiI {
+// 	left: var(--gradient-x-offset);
+// 	background: linear-gradient(180deg, #58a5ff, #a67af4);
+// }
 
-.gradients_gradientSectionBorder__otK6A {
-	--gradient-y-offset: -200px;
-	--gradient-x-offset: -200px;
-	--height: 255px;
-	position: relative;
-	overflow: hidden;
-	will-change: filter;
-}
+// .gradients_gradientSectionBorderRight__eSMmF {
+// 	right: var(--gradient-x-offset);
+// 	background: linear-gradient(180deg, #ff3358, #ff4fd8);
+// }
+
+// .gradients_gradientSectionBorder__otK6A {
+// 	--gradient-y-offset: -200px;
+// 	--gradient-x-offset: -200px;
+// 	--height: 255px;
+// 	position: relative;
+// 	overflow: hidden;
+// 	will-change: filter;
+// }
 
 .slider-wrapper .splide__track {
 	@apply overflow-visible;
