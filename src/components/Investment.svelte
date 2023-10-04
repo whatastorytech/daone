@@ -1,10 +1,9 @@
+<script>
+	import GradientDivider from '../components/GradientDivider.svelte';
+</script>
 <!-- Investment section starts here -->
 <section class="py-16 md:py-24 lg:py-32 relative overflow-hidden">
-	<div style="opacity: 1; transform: none;">
-		<span class="w-full absolute h-px top-0 opacity-25 bg-gradient-to-r from-[#002cff] to-[#0086e2]"></span>
-		<!-- <span class="gradients_gradientSectionBorder__otK6A gradients_gradientSectionBorderLeft__6XXiI dark:opacity-35 opacity-[0.15]"></span>
-		<span class="gradients_gradientSectionBorder__otK6A gradients_gradientSectionBorderRight__eSMmF dark:opacity-35 opacity-[0.15]"></span> -->
-	</div>
+	<GradientDivider/>
 	<!-- backdrop circle starts here -->
 	<!-- <div class="relative isolate">
 		<div class="absolute inset-x-0 -top-40 -z-10 transform-gpu overflow-hidden blur-3xl sm:-top-80" aria-hidden="true">
@@ -25,64 +24,64 @@
 					ability to collaborate.
 				</p>
 			</div>
-			<div class="grid grid-cols-3 gap-8 px-32">
-				<div class="space-y-3 border border-blue-50 border-opacity-30 rounded-md p-8">
+			<div class="grid grid-cols-3 gap-8 px-32 [&>div]:space-y-3 [&>div]:border [&>div]:border-blue-50/20 [&>div]:rounded-md [&>div]:p-8">
+				<div>
 					<h3 class="text-white text-lg font-medium font-cg">Co-Investments & Partnerships</h3>
 					<p class="text-base leading-6">
 						Capitalizing on our vast global network, we foresee numerous co-investment prospects and
 						exclusive sports industry partnerships.
 					</p>
 				</div>
-				<div class="space-y-3 border border-blue-50 border-opacity-30 rounded-md p-8">
+				<div>
 					<h3 class="text-white text-lg font-medium font-cg">Direct Sourcing</h3>
 					<p class="text-base leading-6">
 						By actively tracking SportsTech developments and monitoring leading entrepreneurs, we
 						strategically approach them for investment at opportune moments.
 					</p>
 				</div>
-				<div class="space-y-3 border border-blue-50 border-opacity-30 rounded-md p-8">
+				<div>
 					<h3 class="text-white text-lg font-medium font-cg">Community Building</h3>
 					<p class="text-base leading-6">
 						Focus on building a strong community comprising investment bankers, advisors,
 						consultants, angel investors, serial entrepreneurs within the sports tech domain.
 					</p>
 				</div>
-				<div class="space-y-3 border border-blue-50 border-opacity-30 rounded-md p-8">
+				<div>
 					<h3 class="text-white text-lg font-medium font-cg">Co-Investments & Partnerships</h3>
 					<p class="text-base leading-6">
 						Capitalizing on our vast global network, we foresee numerous co-investment prospects and
 						exclusive sports industry partnerships.
 					</p>
 				</div>
-				<div class="space-y-3 border border-blue-50 border-opacity-30 rounded-md p-8">
+				<div>
 					<h3 class="text-white text-lg font-medium font-cg">Direct Sourcing</h3>
 					<p class="text-base leading-6">
 						By actively tracking SportsTech developments and monitoring leading entrepreneurs, we
 						strategically approach them for investment at opportune moments.
 					</p>
 				</div>
-				<div class="space-y-3 border border-blue-50 border-opacity-30 rounded-md p-8">
+				<div>
 					<h3 class="text-white text-lg font-medium font-cg">Community Building</h3>
 					<p class="text-base leading-6">
 						Focus on building a strong community comprising investment bankers, advisors,
 						consultants, angel investors, serial entrepreneurs within the sports tech domain.
 					</p>
 				</div>
-				<div class="space-y-3 border border-blue-50 border-opacity-30 rounded-md p-8">
+				<div>
 					<h3 class="text-white text-lg font-medium font-cg">Co-Investments & Partnerships</h3>
 					<p class="text-base leading-6">
 						Capitalizing on our vast global network, we foresee numerous co-investment prospects and
 						exclusive sports industry partnerships.
 					</p>
 				</div>
-				<div class="space-y-3 border border-blue-50 border-opacity-30 rounded-md p-8">
+				<div>
 					<h3 class="text-white text-lg font-medium font-cg">Direct Sourcing</h3>
 					<p class="text-base leading-6">
 						By actively tracking SportsTech developments and monitoring leading entrepreneurs, we
 						strategically approach them for investment at opportune moments.
 					</p>
 				</div>
-				<div class="space-y-3 border border-blue-50 border-opacity-30 rounded-md p-8">
+				<div>
 					<h3 class="text-white text-lg font-medium font-cg">Community Building</h3>
 					<p class="text-base leading-6">
 						Focus on building a strong community comprising investment bankers, advisors,
