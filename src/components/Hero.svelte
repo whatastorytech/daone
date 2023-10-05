@@ -9,7 +9,7 @@
 				<p class="mt-8 text-2xl leading-8">A First of it’s Kind Celebrity led Global VC Fund</p>
 				<button
 					class="mt-10 text-white text-lg leading-6 border border-[#0086e2] bg-[#022842] hover:bg-[#021f32] rounded-full px-12 py-3"
-					>Apply for funding <span aria-hidden="true">&rarr;</span></button
+					>Pitch Us <span aria-hidden="true">&rarr;</span></button
 				>
 				<div class="mt-20">
 					<p class="text-lg font-medium">As featured in</p>

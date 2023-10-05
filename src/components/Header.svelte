@@ -40,7 +40,7 @@
 			<a
 				href="/"
 				class="text-white text-lg leading-6 border border-[#0086e2] bg-[#022842] hover:bg-[#021f32] rounded-full px-12 py-3"
-				>Apply for funding <span aria-hidden="true">&rarr;</span></a
+				>Pitch Us <span aria-hidden="true">&rarr;</span></a
 			>
 		</div>
 	</nav>
@@ -95,7 +95,7 @@
 						<a
 							href="/"
 							class="-mx-3 block rounded-lg px-3 py-2.5 text-base leading-6 hover:bg-[#ededed]"
-							>Apply for funding
+							>Pitch Us
 						</a>
 					</div>
 				</div>

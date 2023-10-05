@@ -27,16 +27,6 @@
     function toggleAccordion(index) {
         faqItems[index].isOpen = !faqItems[index].isOpen;
     }
-
-    // const faqItems = document.querySelectorAll(".faq-item");
-
-    // faqItems.forEach((faqItem) => {
-    // faqItem.querySelector(".faq-ques").addEventListener("click", () => {
-    //     faqItem.querySelector(".toggle").classList.toggle("hidden");
-    //     faqItem.querySelector(".chevronUpIcon").classList.toggle("hidden");
-    //     faqItem.querySelector(".chevronDownIcon").classList.toggle("hidden");
-    // });
-    // });
 </script>
 
 <!-- FAQ section starts here -->
