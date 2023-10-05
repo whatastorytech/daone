@@ -47,23 +47,23 @@
 			<p class="text-xl">
 				Explore FAQs about Da One Global Ventures: Focus, Funding, Support
 			</p>
-        <dl class="mt-0 lg:mt-10 space-y-6 lg:space-y-10 divide-y divide-gray-900">
+        <dl class="mt-10 space-y-6 lg:space-y-10 [&>div]:border [&>div]:border-blue-50/20 [&>div]:rounded-md [&>div]:p-4">
             {#each faqItems as faqItem, index (faqItem.question)}
-                <div class="faq-item pt-6 lg:pt-10">
+                <div class="faq-item">
                     <dt>
-                    <button type="button" class="faq-ques flex w-full items-start justify-between text-left text-gray-900" on:click={() => toggleAccordion(index)}>
-                        <span class="text-white text-xl font-medium font-cg tracking-wide">{faqItem.question}</span>
-                        <span class="ml-6 flex h-7 items-center">
-                        <svg class="w-6 h-6 lg:w-8 lg:h-8" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
-                            stroke="currentColor">
-                            <path class="{faqItem.isOpen ? 'chevronUpIcon' : 'chevronDownIcon'}" stroke-linecap="round" stroke-linejoin="round"
-                            d="M19.5 8.25l-7.5 7.5-7.5-7.5" />
-                        </svg>
-                        </span>
-                    </button>
+                        <button type="button" class="faq-ques flex w-full items-start justify-between text-left text-gray-900" on:click={() => toggleAccordion(index)}>
+                            <span class="text-white text-lg font-cg tracking-wide">{faqItem.question}</span>
+                            <span class="flex h-7 items-center">
+                                <svg class="w-6 h-6 text-blue-50/20" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+                                    stroke="currentColor">
+                                    <path class="{faqItem.isOpen ? 'chevronUpIcon' : 'chevronDownIcon'}" stroke-linecap="round" stroke-linejoin="round"
+                                    d="M19.5 8.25l-7.5 7.5-7.5-7.5" />
+                                </svg>
+                            </span>
+                        </button>
                     </dt>
                     <dd class="{faqItem.isOpen ? 'toggle' : 'hidden'} mt-2">
-                    <p class="text-lg leading-7">{faqItem.answer}</p>
+                        <p class="text-lg leading-7">{faqItem.answer}</p>
                     </dd>
                 </div>
             {/each}
