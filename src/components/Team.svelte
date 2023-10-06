@@ -136,7 +136,7 @@
 			</div>
 			<div class="space-y-2">
 				<div class="text-xl">Over</div>
-				<div class="text-white text-6xl tracking-wider uppercase font-bold font-cg">80M</div>
+				<div class="text-white text-6xl tracking-wider uppercase font-bold font-cg">$220B</div>
 				<div class="text-xl">Funded startups</div>
 			</div>
 		</div>
