@@ -30,6 +30,9 @@
   },
   "type": "module",
   "dependencies": {
-    "@splidejs/svelte-splide": "^0.2.9"
+    "@splidejs/svelte-splide": "^0.2.9",
+    "@three-ts/orbit-controls": "^1.4.7",
+    "three": "^0.157.0",
+    "three.meshline": "^1.4.0"
   }
 }
