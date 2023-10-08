@@ -30,5 +30,7 @@
   },
   "type": "module",
   "dependencies": {
+    "@splidejs/splide-extension-auto-scroll": "^0.5.3",
+    "@splidejs/svelte-splide": "^0.2.9"
   }
 }
