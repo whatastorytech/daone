@@ -38,7 +38,7 @@
 </script>
 
 <!-- FAQ section starts here -->
-<section class="py-16 md:py-24 lg:py-32 relative overflow-hidden">
+<section class="py-16 md:py-24 lg:py-32 px-4 sm:px-0 relative overflow-hidden">
 	<GradientDivider />
 	<div class="container mx-auto flex flex-col items-center gap-4">
 		<h2 class="text-white text-5xl font-medium font-cg tracking-wide">

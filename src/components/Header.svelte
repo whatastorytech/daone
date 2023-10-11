@@ -1,5 +1,5 @@
 <!-- Header starts here -->
-<header>
+<header class="px-4 sm:px-0">
 	<nav class="flex mx-auto max-w-screen-xl lg:max-w-screen-2xl items-center justify-between py-6 lg:px-3" aria-label="Global">
 		<div class="flex lg:flex-1">
 			<a href="/" class="-m-1.5 p-1.5">

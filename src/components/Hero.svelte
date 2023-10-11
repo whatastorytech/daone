@@ -4,9 +4,9 @@
 </script>
 
 <!-- Hero section starts here -->
-<section class="py-16 md:py-24 lg:py-32">
+<section class="py-16 md:py-24 lg:py-32 px-4 sm:px-0">
 	<div class="container mx-auto">
-		<div class="grid grid-cols-2 gap-x-48">
+		<div class="grid sm:grid-cols-2 gap-x-48">
 			<div>
 				<h1 class="text-white text-6xl tracking-wide font-semibold font-cg">
 					Sports meets Capital
@@ -111,7 +111,7 @@
 					</div>
 				</div>
 			</div>
-			<div>
+			<div class="hidden sm:block">
 				<img src="./shikhar-dhawan-daone.jpeg" alt="" />
 			</div>
 		</div>

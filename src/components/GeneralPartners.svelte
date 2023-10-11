@@ -1,4 +1,4 @@
-<div class="grid grid-cols-2 gap-x-24 py-48 px-32 items-center">
+<div class="grid sm:grid-cols-2 gap-x-24 py-16 sm:py-48 px-4 sm:px-32 items-center">
 	<div class="space-y-6">
 		<h3 class="text-white text-3xl font-medium font-cg uppercase tracking-wide">Shikhar Dhawan</h3>
 		<p class="text-lg">

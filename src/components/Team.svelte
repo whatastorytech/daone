@@ -1,11 +1,12 @@
 <script>
 	import GradientDivider from '../components/GradientDivider.svelte';
 	import GeneralPartners from './GeneralPartners.svelte';
+	import Facts from './Facts.svelte';
 	import { Splide, SplideSlide, SplideTrack } from '@splidejs/svelte-splide';
 	import '@splidejs/svelte-splide/css/skyblue';
 </script>
 <!-- Team section starts here -->
-<section class="py-16 md:py-24 lg:py-32 relative overflow-hidden">
+<section class="py-16 md:py-24 lg:py-32 px-4 sm:px-0 relative overflow-hidden">
 	<GradientDivider />
 	<div class="w-full relative z-10 space-y-16">
 		<div class="container mx-auto flex flex-col items-center gap-4">
@@ -123,23 +124,7 @@
 				</SplideTrack>
 			</div>
 		</Splide>
-		<div class="container mx-auto flex text-center justify-center gap-x-32 py-16">
-			<div class="space-y-2">
-				<div class="text-xl">Over</div>
-				<div class="text-white text-6xl tracking-wider uppercase font-bold font-cg">1,000</div>
-				<div class="text-xl">Industry leaders</div>
-			</div>
-			<div class="space-y-2">
-				<div class="text-xl">Immersive</div>
-				<div class="text-white text-6xl tracking-wider uppercase font-bold font-cg">Global</div>
-				<div class="text-xl">Sports network</div>
-			</div>
-			<div class="space-y-2">
-				<div class="text-xl">Over</div>
-				<div class="text-white text-6xl tracking-wider uppercase font-bold font-cg">$220B</div>
-				<div class="text-xl">Funded startups</div>
-			</div>
-		</div>
+		<Facts />
 	</div>
 
 </section>

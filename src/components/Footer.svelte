@@ -10,7 +10,7 @@
 </svelte:head>
 
 <!-- Footer starts here -->
-<section class="pt-16 pb-8 md:pt-24 lg:pt-32 relative overflow-hidden">
+<section class="pt-16 pb-8 md:pt-24 lg:pt-32 px-4 sm:px-0 relative overflow-hidden">
 	<GradientDivider />
 	<Globe />
 	<div class="container mx-auto">
