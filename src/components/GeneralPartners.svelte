@@ -11,7 +11,9 @@
 		</p>
 	</div>
 	<div class="relative">
-        <img src="./shikhardhawan.png" alt="">
-        <div class="absolute top-0 -z-30 bg-gradient-to-tr from-blue-500 to-blue-600 w-96 h-96 rounded-full blur-[150px]"></div>
-    </div>
+		<img src="./shikhardhawan.png" alt="" />
+		<div
+			class="absolute top-0 -z-30 bg-gradient-to-tr from-blue-500 to-blue-600 w-96 h-96 rounded-full blur-[150px]"
+		></div>
+	</div>
 </div>

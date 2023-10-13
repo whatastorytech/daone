@@ -3,7 +3,7 @@
 </script>
 
 <!-- Investment section starts here -->
-<section class="py-16 md:py-24 lg:py-32 relative overflow-hidden">
+<section class="py-16 md:py-24 lg:py-32 relative bg-gradient-to-b from-[#000c14] to-[#000f27]">
 	<GradientDivider />
 	<div class="container mx-auto">
 		<div class="space-y-16 px-4 lg:px-32">
@@ -17,13 +17,13 @@
 				</p>
 			</div>
 			<div
-				class="grid sm:grid-cols-3 gap-8 [&>div]:space-y-3 [&>div]:border [&>div]:border-blue-50/20 [&>div]:rounded-md [&>div]:p-8"
+				class="grid sm:grid-cols-3 gap-8 [&>div]:space-y-3 [&>div]:border [&>div]:border-[#00378fc7] [&>div]:rounded-md [&>div]:p-8 [&>div]:bg-gradient-to-tr [&>div]:from-[#00378f6d]"
 			>
 				<div>
-					<h3 class="text-white text-xl font-medium font-cg tracking-wide">
+					<h3 class="text-white text-xl font-semibold font-cg tracking-wide">
 						Co-Investments & Partnerships
 					</h3>
-					<p class="text-lg leading-7">
+					<p class="text-lg leading-normal text-white/70">
 						Capitalizing on our vast global network, we foresee numerous co-investment prospects and
 						exclusive sports industry partnerships.
 					</p>
