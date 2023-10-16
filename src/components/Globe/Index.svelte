@@ -7,7 +7,9 @@
 	});
 </script>
 
-<div class="absolute top-0 inset-x-0 flex items-center justify-end bottom-6">
+<div
+	class="absolute top-0 inset-x-0 flex items-center justify-end bottom-6 pointer-events-none overflow-hidden"
+>
 	<div class="globe js-globe">
 		<div class="svg-wrapper">
 			<svg

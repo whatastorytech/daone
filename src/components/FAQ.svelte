@@ -38,15 +38,16 @@
 </script>
 
 <!-- FAQ section starts here -->
-<section class="py-16 md:py-24 lg:py-32 px-4 sm:px-0 relative overflow-hidden">
-	<GradientDivider />
+<section
+	class="py-16 md:py-24 lg:py-32 px-4 sm:px-0 relative overflow-hidden bg-gradient-to-b to-[#000c14] from-[#000f27]"
+>
 	<div class="container mx-auto flex flex-col items-center gap-4">
 		<h2 class="text-white text-5xl font-medium font-cg tracking-wide">
 			Frequently asked questions
 		</h2>
 		<p class="text-xl">Explore FAQs about Da One Global Ventures: Focus, Funding, Support</p>
 		<dl
-			class="flex flex-col items-stretch mt-10 space-y-6 lg:space-y-8 [&>div]:border [&>div]:border-blue-50/20 [&>div]:rounded-md [&>div]:p-4 max-w-2xl w-full"
+			class="flex flex-col items-stretch mt-10 space-y-6 lg:space-y-8 [&>div]:border [&>div]:rounded-md [&>div]:p-4 max-w-2xl w-full"
 		>
 			{#each faqItems as faqItem, index (faqItem.question)}
 				<div class="faq-item">
@@ -85,4 +86,12 @@
 		</dl>
 	</div>
 </section>
+
 <!-- FAQ section ends here -->
+
+<style lang="scss">
+	.faq-item {
+		background: radial-gradient(107.2% 200% at 0% 50%, #000f27 0%, rgb(48 56 107 / 0%) 100%);
+		border-color: #002a46c9;
+	}
+</style>

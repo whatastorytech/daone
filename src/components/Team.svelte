@@ -6,17 +6,14 @@
 	import '@splidejs/svelte-splide/css/skyblue';
 </script>
 
+<GeneralPartners />
+
 <!-- Team section starts here -->
 <section
-	class="py-16 md:py-24 lg:py-32 px-4 sm:px-0 relative overflow-hidden bg-gradient-to-b from-[#000f27] to-[#000c14]"
+	class="py-16 md:py-24 lg:py-32 px-4 sm:px-0 relative overflow-hidden bg-gradient-to-t to-[#000c14] from-[#000f27]"
 >
 	<div class="w-full relative z-10 space-y-16">
 		<div class="container mx-auto flex flex-col items-center gap-4">
-			<h2 class="text-white text-5xl font-medium font-cg tracking-wide">Success Sherpas</h2>
-			<p class="text-xl">
-				Our pillars of guidance and support, who help us reach the summit of success!
-			</p>
-			<GeneralPartners />
 			<div class="team-slide has-x-mask">
 				<Splide
 					class="slider-wrapper"
