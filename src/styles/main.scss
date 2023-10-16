@@ -2,10 +2,17 @@
 
 @import '../fonts/clash-grotesk.css';
 
-.slider-wrapper .splide__track {
-	@apply overflow-visible;
-}
+.has-x-mask {
+	@apply w-auto -mx-3;
 
+	-webkit-mask-image: linear-gradient(
+		to right,
+		rgba(0, 0, 0, 0) 0%,
+		rgb(0, 0, 0) 12.5%,
+		rgb(0, 0, 0) 87.5%,
+		rgba(0, 0, 0, 0) 100%
+	);
+}
 .logo-track-mask {
 	@apply w-auto -mx-3;
 
@@ -17,5 +24,124 @@
 			rgb(0, 0, 0) 87.5%,
 			rgba(0, 0, 0, 0) 100%
 		);
+	}
+}
+
+.investors {
+	@apply w-full mx-auto overflow-hidden bg-gradient-to-b from-[#000f27] to-[#000c14] py-16;
+}
+
+.investors-scroll {
+	@apply w-full relative overflow-hidden;
+}
+
+.investor__container {
+	@apply w-1/2;
+}
+
+.investor__item {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	align-content: center;
+	position: relative;
+	padding: 0 4rem;
+	color: white;
+	height: 90vh;
+}
+
+.investor__trigger {
+	position: absolute;
+	top: 20vh;
+}
+
+.investor__media {
+	@apply absolute bottom-0 right-0 top-0 w-1/2 flex items-center justify-center;
+
+	img {
+		@apply my-16;
+	}
+
+	&.active {
+		@apply fixed top-0;
+	}
+}
+
+.investor__end {
+	position: absolute;
+	bottom: 50vh;
+}
+
+.investor__image {
+	@apply absolute inset-x-0 top-0 flex items-center justify-center;
+	visibility: hidden;
+}
+
+.investor__title {
+	font-size: 3rem;
+	line-height: 1.15;
+	position: absolute;
+	top: 5vh;
+	width: 100%;
+	left: 0;
+	right: 0;
+	margin: 0 auto !important;
+
+	span {
+		display: block;
+	}
+}
+
+.investor__scroll {
+	display: block;
+	font-size: 1.25rem;
+	position: absolute;
+	bottom: 5vh;
+	width: 100%;
+	left: 0;
+	right: 0;
+	margin: 0 auto;
+	text-transform: uppercase;
+	text-decoration: none;
+	line-height: 1.5;
+	animation: blinker 3s linear infinite;
+	color: white;
+	cursor: default;
+}
+
+@keyframes blinker {
+	50% {
+		opacity: 0;
+	}
+}
+
+.pattern-img-mask {
+	@apply relative;
+
+	img {
+		-webkit-mask-image: url(data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iNDE0IiBoZWlnaHQ9IjM5OCIgdmlld0JveD0iMCAwIDQxNCAzOTgiIGZpbGw9Im5vbmUiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+CjxwYXRoIGQ9Ik0zMDAuNSAzOThDNDA5LjA3MSAzOTggNDEzLjUgMjM2LjA3MSA0MTMuNSAxMjcuNUM0MTMuNSAxOC45Mjg1IDI3MS4wNzEgMCAxNjIuNSAwQzAgMCAwIDE3OS45MjkgMCAyODguNUMwIDM5Ny4wNzEgMTkxLjkyOSAzOTggMzAwLjUgMzk4WiIgZmlsbD0iI0M1QzVGRiIvPgo8L3N2Zz4K);
+		-webkit-mask-repeat: no-repeat;
+		-webkit-mask-size: contain;
+	}
+
+	&::before,
+	&::after {
+		content: '';
+		@apply absolute bg-gradient-to-tr from-blue-700 blur-3xl rounded-full;
+	}
+
+	&::before {
+		@apply w-48 h-64 -top-14 left-0;
+	}
+
+	&::after {
+		@apply w-64 h-32 -bottom-0 right-0;
+	}
+
+	&:nth-child(2) {
+		&::before {
+			@apply w-48 h-64 -right-14 left-[unset];
+		}
 	}
 }

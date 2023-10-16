@@ -7,7 +7,9 @@
 	});
 </script>
 
-<div class="absolute top-0 inset-x-0 flex items-center justify-end bottom-6">
+<div
+	class="absolute top-0 inset-x-0 flex items-center justify-end bottom-6 pointer-events-none overflow-hidden"
+>
 	<div class="globe js-globe">
 		<div class="svg-wrapper">
 			<svg
@@ -101,7 +103,7 @@
 	}
 
 	$dotSize: 16px;
-	$dotSizeLarge: $dotSize + ($dotSize / 2);
+	$dotSizeLarge: $dotSize + calc($dotSize / 2);
 
 	.globe .globe-list {
 		opacity: 0;
@@ -115,8 +117,8 @@
 	.globe .globe-list > li {
 		opacity: 0.4;
 		position: absolute;
-		margin-left: -($dotSize / 2);
-		margin-top: -($dotSize / 2);
+		margin-left: -1 * calc($dotSize / 2);
+		margin-top: -1 * calc($dotSize / 2);
 		width: $dotSize;
 		height: $dotSize;
 		border-radius: 50%;
@@ -126,8 +128,8 @@
 
 	.globe .globe-list > li.active {
 		opacity: 1;
-		margin-left: -($dotSizeLarge / 2);
-		margin-top: -($dotSizeLarge / 2);
+		margin-left: -1 * calc($dotSizeLarge / 2);
+		margin-top: -1 * calc($dotSizeLarge / 2);
 		width: $dotSizeLarge;
 		height: $dotSizeLarge;
 	}
@@ -139,8 +141,8 @@
 		position: absolute;
 		left: 50%;
 		top: 50%;
-		margin-left: -($dotSize / 2);
-		margin-top: -($dotSize / 2);
+		margin-left: -1 * calc($dotSize / 2);
+		margin-top: -1 * calc($dotSize / 2);
 		width: $dotSize;
 		height: $dotSize;
 		border-radius: 50%;
@@ -214,8 +216,8 @@
 	}
 
 	.globe .globe-list > li.active:before {
-		margin-left: -($dotSizeLarge / 2);
-		margin-top: -($dotSizeLarge / 2);
+		margin-left: -1 * calc($dotSizeLarge / 2);
+		margin-top: -1 * calc($dotSizeLarge / 2);
 		width: $dotSizeLarge;
 		height: $dotSizeLarge;
 	}

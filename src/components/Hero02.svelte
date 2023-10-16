@@ -1,16 +1,29 @@
 <script>
 	import { Splide, SplideSlide } from '@splidejs/svelte-splide';
 	import { AutoScroll } from '@splidejs/splide-extension-auto-scroll';
+	import GradientOverlay from '../components/GradientOverlay.svelte';
+	import OvalWithCircle from '../components/Gradients/OvalWithCirlce.svelte';
 </script>
 
 <!-- Hero section starts here -->
 
-<section class="relative h-screen flex flex-col text-white">
-    <div class="absolute top-0 left-0 w-full h-full overflow-hidden after:content-[''] after:absolute after:z-10 after:w-full after:h-full after:top-0 after:left-0 after:bg-slate-950/90">
-        <video class="min-w-full min-h-full absolute object-cover top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2" src="https://cuono.dev/video1.mp4" type="video/mp4" autoplay muted loop></video>
-    </div>
-    <div class="container mx-auto z-20">
-		<nav class="flex mx-auto max-w-screen-xl lg:max-w-screen-2xl items-center justify-between py-6 lg:px-3" aria-label="Global">
+<section class="relative flex flex-col text-white">
+	<div class="absolute top-0 left-0 w-full h-full overflow-hidden">
+		<video
+			class="min-w-full min-h-full absolute object-cover top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2"
+			src="https://cuono.dev/video1.mp4"
+			type="video/mp4"
+			autoplay
+			muted
+			loop
+		></video>
+		<GradientOverlay />
+	</div>
+	<div class="container mx-auto z-20">
+		<nav
+			class="flex mx-auto max-w-screen-xl lg:max-w-screen-2xl items-center justify-between py-6 lg:px-3"
+			aria-label="Global"
+		>
 			<div class="flex lg:flex-1">
 				<a href="/" class="-m-1.5 p-1.5">
 					<img class="w-48" src="./logo-white.svg" alt="" />
@@ -110,11 +123,9 @@
 			</div>
 		</div>
 		<!-- Mobile menu ends here -->
-        <div class="grid grid-cols-2 gap-x-48 py-52">
+		<div class="grid grid-cols-2 gap-x-48 py-36">
 			<div>
-				<h1 class="text-6xl tracking-wide font-semibold font-cg">
-					Sports meets Capital
-				</h1>
+				<h1 class="text-6xl tracking-wide font-semibold font-cg">Sports meets Capital</h1>
 				<p class="mt-8 text-2xl leading-8">A First of it’s Kind Celebrity led Global VC Fund</p>
 				<button
 					class="mt-10 text-lg leading-6 border border-[#0086e2] bg-[#022842] hover:bg-[#021f32] rounded-full px-12 py-3"
@@ -215,11 +226,11 @@
 					</div>
 				</div>
 			</div>
-			<div>
-				<!-- <img src="./shikhar-dhawan-daone.jpeg" alt="" /> -->
+			<div class="-mt-12 flex items-center justify-center">
+				<OvalWithCircle />
 			</div>
 		</div>
-    </div>
+	</div>
 </section>
 
 <!-- Hero section ends here -->
