@@ -2,10 +2,17 @@
 
 @import '../fonts/clash-grotesk.css';
 
-.slider-wrapper .splide__track {
-	@apply overflow-visible;
-}
+.has-x-mask {
+	@apply w-auto -mx-3;
 
+	-webkit-mask-image: linear-gradient(
+		to right,
+		rgba(0, 0, 0, 0) 0%,
+		rgb(0, 0, 0) 12.5%,
+		rgb(0, 0, 0) 87.5%,
+		rgba(0, 0, 0, 0) 100%
+	);
+}
 .logo-track-mask {
 	@apply w-auto -mx-3;
 
