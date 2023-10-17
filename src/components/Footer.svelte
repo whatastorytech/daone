@@ -14,14 +14,19 @@
 	<GradientDivider />
 	<Globe />
 	<div class="container mx-auto">
-		<div class="flex flex-col mx-auto max-w-3xl items-center justify-center gap-4">
-			<h3 class="text-white text-center text-5xl font-medium font-cg tracking-wide">
+		<div class="flex flex-col mx-auto max-w-6xl items-center justify-center gap-4">
+			<!-- <h3 class="text-white text-center text-5xl font-medium font-cg tracking-wide">
 				Join us in shaping the future of sports with quality deals, funding and support.
-			</h3>
-			<button
-				class="mt-10 text-white text-lg leading-6 border border-[#0086e2] bg-[#022842] hover:bg-[#021f32] rounded-full px-12 py-3"
-				>Pitch Us <span aria-hidden="true">&rarr;</span>
-			</button>
+			</h3> -->
+			<div
+				data-tf-widget="dqz9qeVg"
+				data-tf-opacity="100"
+				data-tf-iframe-props="title=form_title"
+				data-tf-transitive-search-params
+				data-tf-medium="snippet"
+				style="width:100%;height:500px;"
+			></div>
+			<script src="//embed.typeform.com/next/embed.js"></script>
 			<p class="pt-20">© 2023 Da One Global Venutres</p>
 		</div>
 	</div>
