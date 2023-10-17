@@ -1,4 +1,17 @@
-<div class="flex items-center justify-center flex-col gap-5 p-5">
-    <h1 class="text-lg text-black">Welcome to SvelteKit with TailwindCSS</h1>
-        <p>Visit <a href="https://kit.svelte.dev">kit.svelte.dev</a> to read the documentation</p>
-</div>
+<script>
+	import Hero02 from '../components/Hero02.svelte';
+	import Funding from '../components/Funding.svelte';
+	import Investment from '../components/Investment.svelte';
+	import Team from '../components/Team.svelte';
+	import FAQ from '../components/FAQ.svelte';
+	import Form from '../components/Form.svelte';
+	import Footer from '../components/Footer.svelte';
+</script>
+
+<Hero02 />
+<Funding />
+<Investment />
+<Team />
+<FAQ />
+<Form />
+<Footer />

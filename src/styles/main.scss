@@ -1,1 +1,28 @@
 @import './tailwind';
+
+@import '../fonts/clash-grotesk.css';
+
+.has-x-mask {
+	@apply w-auto -mx-3;
+
+	-webkit-mask-image: linear-gradient(
+		to right,
+		rgba(0, 0, 0, 0) 0%,
+		rgb(0, 0, 0) 12.5%,
+		rgb(0, 0, 0) 87.5%,
+		rgba(0, 0, 0, 0) 100%
+	);
+}
+.logo-track-mask {
+	@apply w-auto -mx-3;
+
+	.splide__track {
+		-webkit-mask-image: linear-gradient(
+			to right,
+			rgba(0, 0, 0, 0) 0%,
+			rgb(0, 0, 0) 12.5%,
+			rgb(0, 0, 0) 87.5%,
+			rgba(0, 0, 0, 0) 100%
+		);
+	}
+}

@@ -5,12 +5,15 @@
 ```bash
 # install dependencies
 npm install
+yarn
 
 # run dev server
 npm run dev
+yarn dev
 
 # or start the server and open the app in a new browser tab
 npm run dev -- --open
+yarn dev -- --open
 ```
 
 ## Building
