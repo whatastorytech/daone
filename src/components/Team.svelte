@@ -3,8 +3,10 @@
 	import GeneralPartners from './GeneralPartners.svelte';
 	import Facts from './Facts.svelte';
 	import { Splide, SplideSlide, SplideTrack } from '@splidejs/svelte-splide';
+	import { AutoScroll } from '@splidejs/splide-extension-auto-scroll';
 	import '@splidejs/svelte-splide/css/skyblue';
 </script>
+
 <!-- Team section starts here -->
 <section class="py-16 md:py-24 lg:py-32 px-4 sm:px-0 relative overflow-hidden">
 	<GradientDivider />
@@ -15,129 +17,160 @@
 				Our pillars of guidance and support, who help us reach the summit of success!
 			</p>
 			<GeneralPartners />
-		</div>
-		<Splide class="slider-wrapper" hasTrack={ false } aria-label="Out Team" options={ {
-			rewind: true,
-			gap   : '2rem',
-			perPage: 4,
-			perMove: 1,
-			pagination: false
-		  } }>
-			<div class="flex flex-col container mx-auto space-y-16 ">
-				<!-- <div class="splide__arrows">
-					<button class="splide__arrow splide__arrow--prev">
-						<svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor">
-							<path stroke-linecap="round" stroke-linejoin="round" d="M13.5 4.5L21 12m0 0l-7.5 7.5M21 12H3" />
-						</svg>			  
-					</button>
-					<button class="splide__arrow splide__arrow--next">
-						<svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor">
-							<path stroke-linecap="round" stroke-linejoin="round" d="M13.5 4.5L21 12m0 0l-7.5 7.5M21 12H3" />
-						</svg>	
-					</button>
-				</div> -->
-				<SplideTrack>
-					<SplideSlide class="space-y-4">
-						<img src="./a1.jpg" alt="" class="rounded-md"/>
-						<div>
-							<h3 class="text-white text-lg font-medium font-cg uppercase tracking-wide">Andrew Bell</h3>
-							<p class="text-lg">Founder</p>
-						</div>
-					</SplideSlide>
-					<SplideSlide class="space-y-4">
-						<img src="./a2.jpg" alt="" class="rounded-md"/>
-						<div>
-							<h3 class="text-white text-lg font-medium font-cg uppercase tracking-wide">Dr. Sandeep Gandhi</h3>
-							<p class="text-lg">Project Coordinator</p>
-						</div>
-					</SplideSlide>
-					<SplideSlide class="space-y-4">
-						<img src="./a3.jpg" alt="" class="rounded-md"/>
-						<div>
-							<h3 class="text-white text-lg font-medium font-cg uppercase tracking-wide">Amitesh Shah</h3>
-							<p class="text-lg">Founder</p>
-						</div>
-					</SplideSlide>
-					<SplideSlide class="space-y-4">
-						<img src="./a4.jpg" alt="" class="rounded-md"/>
-						<div>
-							<h3 class="text-white text-lg font-medium font-cg uppercase tracking-wide">Abhinav Tandon</h3>
-							<p class="text-lg">Project Coordinator</p>
-						</div>
-					</SplideSlide>
-					<SplideSlide class="space-y-4">
-						<img src="./a5.jpg" alt="" class="rounded-md"/>
-						<div>
-							<h3 class="text-white text-lg font-medium font-cg uppercase tracking-wide">Akshay Chhugani</h3>
-							<p class="text-lg">Founder</p>
-						</div>
-					</SplideSlide>
-					<SplideSlide class="space-y-4">
-						<img src="./a6.jpg" alt="" class="rounded-md"/>
-						<div>
-							<h3 class="text-white text-lg font-medium font-cg uppercase tracking-wide">Maharshi Ganatra</h3>
-							<p class="text-lg">Founder</p>
-						</div>
-					</SplideSlide>
-					<SplideSlide class="space-y-4">
-						<img src="./a1.jpg" alt="" class="rounded-md"/>
-						<div>
-							<h3 class="text-white text-lg font-medium font-cg uppercase tracking-wide">Kumar Gaurav</h3>
-							<p class="text-lg">Project Coordinator</p>
-						</div>
-					</SplideSlide>
-					<SplideSlide class="space-y-4">
-						<img src="./a3.jpg" alt="" class="rounded-md"/>
-						<div>
-							<h3 class="text-white text-lg font-medium font-cg uppercase tracking-wide">Akshay Grover</h3>
-							<p class="text-lg">Founder</p>
-						</div>
-					</SplideSlide>
-					<SplideSlide class="space-y-4">
-						<img src="./a5.jpg" alt="" class="rounded-md"/>
-						<div>
-							<h3 class="text-white text-lg font-medium font-cg uppercase tracking-wide">Geetansh Sahni</h3>
-							<p class="text-lg">Project Coordinator</p>
-						</div>
-					</SplideSlide>
-					<SplideSlide class="space-y-4">
-						<img src="./a2.jpg" alt="" class="rounded-md"/>
-						<div>
-							<h3 class="text-white text-lg font-medium font-cg uppercase tracking-wide">Rajeev Duggal</h3>
-							<p class="text-lg">Founder</p>
-						</div>
-					</SplideSlide>
-					<SplideSlide class="space-y-4">
-						<img src="./a4.jpg" alt="" class="rounded-md"/>
-						<div>
-							<h3 class="text-white text-lg font-medium font-cg uppercase tracking-wide">Abhinav Tandon</h3>
-							<p class="text-lg">Project Coordinator</p>
-						</div>
-					</SplideSlide>
-					<SplideSlide class="space-y-4">
-						<img src="./a6.jpg" alt="" class="rounded-md"/>
-						<div>
-							<h3 class="text-white text-lg font-medium font-cg uppercase tracking-wide">Raunak Hajela</h3>
-							<p class="text-lg">Founder</p>
-						</div>
-					</SplideSlide>
-				</SplideTrack>
+			<div class="team-slide has-x-mask">
+				<Splide
+					class="slider-wrapper"
+					hasTrack={false}
+					aria-label="Out Team"
+					options={{
+						rewind: true,
+						gap: '2rem',
+						perPage: 5,
+						perMove: 1,
+						pagination: false,
+						arrows: false,
+						focus: 'center',
+						type: 'loop',
+						autoScroll: {
+							speed: 0.5,
+							pauseOnHover: false
+						}
+					}}
+					extensions={{
+						AutoScroll
+					}}
+				>
+					<div
+						class="flex flex-col container mx-auto space-y-16 [&_img]:grayscale [&_img]:transition-all [&_img:hover]:grayscale-0"
+					>
+						<SplideTrack>
+							<SplideSlide class="space-y-4">
+								<img src="./team/t1.jpg" alt="" class="rounded-md" />
+								<div>
+									<h3 class="text-white text-lg font-medium font-cg uppercase tracking-wide">
+										Andrew Bell
+									</h3>
+									<p class="text-lg">Founder</p>
+								</div>
+							</SplideSlide>
+							<SplideSlide class="space-y-4">
+								<img src="./team/t2.jpg" alt="" class="rounded-md" />
+								<div>
+									<h3 class="text-white text-lg font-medium font-cg uppercase tracking-wide">
+										Dr. Sandeep Gandhi
+									</h3>
+									<p class="text-lg">Project Coordinator</p>
+								</div>
+							</SplideSlide>
+							<SplideSlide class="space-y-4">
+								<img src="./team/t3.jpg" alt="" class="rounded-md" />
+								<div>
+									<h3 class="text-white text-lg font-medium font-cg uppercase tracking-wide">
+										Amitesh Shah
+									</h3>
+									<p class="text-lg">Founder</p>
+								</div>
+							</SplideSlide>
+							<SplideSlide class="space-y-4">
+								<img src="./team/t4.jpg" alt="" class="rounded-md" />
+								<div>
+									<h3 class="text-white text-lg font-medium font-cg uppercase tracking-wide">
+										Abhinav Tandon
+									</h3>
+									<p class="text-lg">Project Coordinator</p>
+								</div>
+							</SplideSlide>
+							<SplideSlide class="space-y-4">
+								<img src="./team/t5.jpg" alt="" class="rounded-md" />
+								<div>
+									<h3 class="text-white text-lg font-medium font-cg uppercase tracking-wide">
+										Akshay Chhugani
+									</h3>
+									<p class="text-lg">Founder</p>
+								</div>
+							</SplideSlide>
+							<SplideSlide class="space-y-4">
+								<img src="./team/t6.jpg" alt="" class="rounded-md" />
+								<div>
+									<h3 class="text-white text-lg font-medium font-cg uppercase tracking-wide">
+										Maharshi Ganatra
+									</h3>
+									<p class="text-lg">Founder</p>
+								</div>
+							</SplideSlide>
+							<SplideSlide class="space-y-4">
+								<img src="./team/t1.jpg" alt="" class="rounded-md" />
+								<div>
+									<h3 class="text-white text-lg font-medium font-cg uppercase tracking-wide">
+										Kumar Gaurav
+									</h3>
+									<p class="text-lg">Project Coordinator</p>
+								</div>
+							</SplideSlide>
+							<SplideSlide class="space-y-4">
+								<img src="./team/t3.jpg" alt="" class="rounded-md" />
+								<div>
+									<h3 class="text-white text-lg font-medium font-cg uppercase tracking-wide">
+										Akshay Grover
+									</h3>
+									<p class="text-lg">Founder</p>
+								</div>
+							</SplideSlide>
+							<SplideSlide class="space-y-4">
+								<img src="./team/t5.jpg" alt="" class="rounded-md" />
+								<div>
+									<h3 class="text-white text-lg font-medium font-cg uppercase tracking-wide">
+										Geetansh Sahni
+									</h3>
+									<p class="text-lg">Project Coordinator</p>
+								</div>
+							</SplideSlide>
+							<SplideSlide class="space-y-4">
+								<img src="./team/t2.jpg" alt="" class="rounded-md" />
+								<div>
+									<h3 class="text-white text-lg font-medium font-cg uppercase tracking-wide">
+										Rajeev Duggal
+									</h3>
+									<p class="text-lg">Founder</p>
+								</div>
+							</SplideSlide>
+							<SplideSlide class="space-y-4">
+								<img src="./team/t4.jpg" alt="" class="rounded-md" />
+								<div>
+									<h3 class="text-white text-lg font-medium font-cg uppercase tracking-wide">
+										Abhinav Tandon
+									</h3>
+									<p class="text-lg">Project Coordinator</p>
+								</div>
+							</SplideSlide>
+							<SplideSlide class="space-y-4">
+								<img src="./team/t6.jpg" alt="" class="rounded-md" />
+								<div>
+									<h3 class="text-white text-lg font-medium font-cg uppercase tracking-wide">
+										Raunak Hajela
+									</h3>
+									<p class="text-lg">Founder</p>
+								</div>
+							</SplideSlide>
+						</SplideTrack>
+					</div>
+				</Splide>
 			</div>
-		</Splide>
+		</div>
 		<Facts />
 	</div>
-
 </section>
+
 <!-- Team section ends here -->
 
 <style lang="scss">
-	.splide__arrows{
+	.splide__arrows {
 		@apply relative;
 
-		.splide__arrow{
+		.splide__arrow {
 			@apply w-10 h-10 border-solid border-2 border-blue-50 rounded-full;
 
-			svg{
+			svg {
 				@apply w-6 h-6 stroke-2;
 			}
 		}
