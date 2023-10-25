@@ -11,7 +11,7 @@
 	<div class="absolute top-0 left-0 w-full h-full overflow-hidden">
 		<video
 			class="min-w-full min-h-full absolute object-cover top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2"
-			src="https://cuono.dev/video1.mp4"
+			src="./bg-video.mp4"
 			type="video/mp4"
 			autoplay
 			muted
